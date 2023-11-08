@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        nav{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color:#333;
-            width: 100%;
-            height: 85px;
-            position: fixed;
-            top: 0;
-            border-bottom: 1px rgb(19, 2, 2);
-        }
-        nav ul{
-            float: right;
-            display: flex;
-            list-style: none;
-        }
-        nav ul li a{
-            color: rgb(250, 248, 248);
-            line-height: 50px;
-            padding: 12px 30px;
-            font-size: 17px;
-            font-family: "Helvetica";
-            text-decoration: none;
-            border-radius: 6px;
-            margin-right: 30px;
-        }
-        nav ul li a:hover{
-            background-color: black;
-        }
-        img{margin-left: 25px;}
-body {margin:0;
-padding:0;}
-    </style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>la felicita</title>
+<link rel="stylesheet" href="coba.css">
 </head>
 <body>
     <nav>
-        <img src="Logo Web.png" width="75px" class="logo">
+        <img src="Logo Web.png" width="75px" class="logo" style="margin-left: 25px";>
         <ul>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Branch</a></li>
-            <li><a href="#">Reservation</a></li>
+            <li><a href="la felicita.html">About Us</a></li>
+            <li><a href="branch.html">Branch</a></li>
+            <li><a href="Reservation.html">Reservation</a></li>
         </ul>
     </nav>
+
+    <div class="mySlides fade">
+        <img src="food.jpg" style="width: 50%; display: block;
+        margin-left: auto;
+        margin-right: auto";>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="gila.jpg" style="width: 50%;  display: block;
+        margin-left: auto;
+        margin-right: auto";>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="spices.jpg" style="width:50%;  display: block;
+        margin-left: auto;
+        margin-right: auto";>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <script src="coba.js"></script>
 </body>
 </html>
