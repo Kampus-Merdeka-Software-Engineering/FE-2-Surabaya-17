@@ -19,7 +19,7 @@ nav ul li a{
     color: rgb(250, 248, 248);
     line-height: 50px;
     padding: 12px 30px;
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Helvetica";
     text-decoration: none;
     border-radius: 6px;
@@ -111,3 +111,41 @@ img {vertical-align: middle;}
     .prev, .next,.text {font-size: 11px}
   }
 
+  body {font-family: "Times New Roman", Georgia, Serif;}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+
+  .button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
