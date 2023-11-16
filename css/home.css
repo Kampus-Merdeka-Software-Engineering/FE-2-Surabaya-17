@@ -1,6 +1,6 @@
 /* navbar */
-nav{
-    list-style-type: none;
+nav {
+  list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -163,7 +163,43 @@ img {vertical-align: middle;}
   
   .flex-container > div {
   margin: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 50px;
   font-size: 20px;
+  }
+
+  .flex-container1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+  }
+  
+  .flex-container1 > div {
+    background-color: gainsboro;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+  }
+  
+  .flex-container2 > div {
+    background-color: gainsboro;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .footer {
+    background-color: #333;
+    padding: 10px;
   }
