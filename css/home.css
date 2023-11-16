@@ -125,7 +125,7 @@ img {vertical-align: middle;}
 
   .button {
     position: relative;
-    background-color: #04AA6D;
+    background-color: #181a19;
     border: none;
     font-size: 20px;
     color: #FFFFFF;
@@ -157,14 +157,14 @@ img {vertical-align: middle;}
   }
 
   .flex-container {
-    display: flex;
+  display: flex;
   align-items: center;
   }
   
   .flex-container > div {
   margin: 20px;
   margin-top: 20px;
-  padding: 50px;
+  padding: 40px;
   font-size: 20px;
   }
 
