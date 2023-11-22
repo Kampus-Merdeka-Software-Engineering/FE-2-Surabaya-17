@@ -39,3 +39,13 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 5000); // Change image every 5 seconds
 }
+
+function bigImg(x) {
+  x.style.height = "200px";
+  x.style.width = "250px";
+}
+
+function normalImg(x) {
+  x.style.height = "150px";
+  x.style.width = "200px";
+}

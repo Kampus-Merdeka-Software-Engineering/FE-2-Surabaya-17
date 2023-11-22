@@ -199,6 +199,11 @@ img {vertical-align: middle;}
     font-size: 30px;
   }
 
+  .flex-container1 div img{
+    width: 200px;
+    height: 150px;
+  }
+
   .flex-container2 {
     display: flex;
     justify-content: space-around;
@@ -213,20 +218,28 @@ img {vertical-align: middle;}
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
   }
+
+  .flex-container2 div img {
+    width: 200px;
+    height: 150px;
+  }
+
   .footer {
     background-color: #333;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     color: white;
-    font-size: 13px;
   }
-  .footer p{
-    margin-top: 30px;
-  }
+
   .footer table {
     width:100%;
     color: white;
     margin-top: 20px;
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
