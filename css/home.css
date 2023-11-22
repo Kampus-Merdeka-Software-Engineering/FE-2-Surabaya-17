@@ -187,6 +187,9 @@ img {vertical-align: middle;}
     display: flex;
     justify-content: space-around;
     background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
   }
   
   .flex-container1 > div {
@@ -195,8 +198,10 @@ img {vertical-align: middle;}
     height: 150px;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    line-height: 15px;
+    font-size: 12px;
+    max-width: 100%;
+    height: auto;
   }
 
   .flex-container1 div img{
@@ -208,6 +213,9 @@ img {vertical-align: middle;}
     display: flex;
     justify-content: space-around;
     background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
   }
   
   .flex-container2 > div {
@@ -216,10 +224,12 @@ img {vertical-align: middle;}
     height: 150px;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    line-height: 15px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
   }
 
   .flex-container2 div img {
