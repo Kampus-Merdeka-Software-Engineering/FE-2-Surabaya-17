@@ -8,10 +8,10 @@
 </head>
 <body>
     <nav>
-        <img src="picture/Logo Web.png" width="75px" class="logo" style="margin-left: 25px";>
+        <img src="picture/logoweb.png" width="75px" class="logo" style="margin-left: 25px";>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">About Us</a></li>
             <li><a href="branch.html">Branch</a></li>
             <li><a href="reservation.html" class="active">Reservation</a></li>
         </ul>
@@ -25,7 +25,7 @@
       </div>
           <div class="elem-group">
         <label for="phone">Your Phone</label>
-        <input type="tel" id="phone" name="visitor_phone" placeholder="628-xxx-xxx" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        <input type="number" id="phone" name="visitor_phone" placeholder="628-xxx-xxx" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
       </div>
             <div class="elem-group inlined">
         <label for="people">For how many people</label>
@@ -33,7 +33,11 @@
       </div>
            <div class="elem-group inlined">
         <label for="date">Date</label>
-        <input type="date" id="ate" name="date" required>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="elem-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" placeholder="13.00" pattern=[A-Z\sa-z]{3,20} min="10.00" max="23.00" >
       </div>
           <div class="elem-group">
         <label for="branch-selection">Select Branch Preference</label>
@@ -56,19 +60,20 @@
       </div>
       <button type="submit">Submit</button>
     </form>
-<div class="footer">
-  <table>
-  <tr>
-      <td>Revolusioner Street No. 17, 
-        <br>Kebayoran Baru, South Jakarta.</td>
-      <td>Open Everyday, 
-        <br>Monday To Sunday 10AM Onwards.</td>
-  </tr>
-    </table>
-    <p>© 2023 La Felicita Ristorante.
-      All Rights Reserved.
-    </p>
-  <div>  
-</div>
+    
+    <div class="footer">
+      <table>
+      <tr>
+          <td style="text-align: left;">Revolusioner Street No. 17, 
+            <br>Kebayoran Baru, South Jakarta.</td>
+          <td>Open Everyday, 
+            <br>Monday To Sunday 10AM Onwards.</td>
+          <td style="text-align: right;">© 2023 La Felicita Ristorante.
+            <br>All Rights Reserved.
+          </td>
+      </tr>
+      </table> 
+    </div>
+
 </body>
 </html>

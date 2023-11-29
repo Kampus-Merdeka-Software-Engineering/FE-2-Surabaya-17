@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+  <header>
     <nav>
-      <img src="picture/Logo Web.png" width="75px" class="logo" style="margin-left: 25px";>
+      <img src="picture/logoweb.png">
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#aboutus">About Us</a></li>
@@ -16,47 +17,27 @@
             <li><a href="reservation.html">Reservation</a></li>
         </ul>
     </nav>
+  </header>
     
-
-  <!-- slideshow -->
-    <div class="mySlides fade">
-        <img src="picture/mc2.png" style="width: 100%;  display: block;
-        margin-left: auto;
-        margin-right: auto; 
-        margin-top: 90px;
-        margin: auto;
-        max-width: 1600px;
-        min-width: 900px";>
-      </div>
+<!-- slideshow -->
+  <div class="mySlides fade">
+    <img src="picture/mc2.png">
+  </div>
       
-      <div class="mySlides fade">
-        <img src="picture/mc3.png" style="width: 100%;  
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 90px;
-        margin: auto;
-        max-width: 1600px;
-        min-width: 900px";>
-      </div>
+  <div class="mySlides fade">
+    <img src="picture/mc3.png">
+  </div>
 
-      <div class="mySlides fade">
-        <img src="picture/mc4.jpg" style="width:100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 90px;
-        margin: auto;
-        max-width: 1600px;
-        min-width: 900px";>
-      </div>
+  <div class="mySlides fade">
+    <img src="picture/mc4.jpg">
+  </div>
 
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      
-      </div>
-      <br>
-      <div style="text-align:center">
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
@@ -67,8 +48,7 @@
       <!-- About Section -->
       <div class="flex-container" id="aboutus">
         <div>
-          <img src="picture/Felicita (1) (1).jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting"
-          width="600px" height="400px">
+          <img src="picture/felicitagate.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting">
         </div>
         
         <div>
@@ -79,20 +59,22 @@
             <button onclick="document.location='reservation.html'">Reserve Now</button>
         </div>
       </div>
+      
+      <!-- Menu Box -->
       <h1 style="text-align: center">Our Specialties</h1>
       <div class="flex-container1">
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/Tagliatelle al ragù alla Bolognese.jpg">
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/TagliatellealragùallaBolognese.jpg">
           <p>Tagliatelle al ragù alla Bolognese</p>
           <p>Price: IDR50,000</p>
         </div>
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/Spaghetti alle vongole.jpg">
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/Spaghettiallevongole.jpg">
           <p>Spaghetti alle vongole</p>
           <p>Price: IDR50,000</p> 
         </div>
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/Lasagne alla Bolognese.jpg">
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/LasagneallaBolognese.jpg">
           <p>Lasagne alla Bolognese</p>
           <p>Price: IDR50,000</p>
         </div>
@@ -102,8 +84,8 @@
           <p>Price: IDR50,000</p>
         </div>  
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/ravioli.jpg">
-          <p>Ravioli</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/ossobuco.jpg">
+          <p>Ossobuco</p>
           <p>Price: IDR50,000</p>
         </div> 
         </div>
@@ -114,12 +96,12 @@
           <p>Price: IDR50,000</p>
         </div>
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/panna cotta.jpg">
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/pannacotta.jpg">
           <p>Panna Cotta</p>
           <p>Price: IDR50,000</p>
         </div>
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/tiramisu affogato.jpg">
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/tiramisuaffogato.jpg">
           <p>Tiramisu Affogato</p>
           <p>Price: IDR50,000</p>
         </div>
@@ -129,12 +111,13 @@
           <p>Price: IDR50,000</p>
         </div>
         <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/canoli.jpg">
-          <p>Canoli</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="picture/biscotti.jpg">
+          <p>Biscotti</p>
           <p>Price: IDR50,000</p>
         </div> 
       </div>
 
+      <!-- Footer -->
       <div class="footer">
         <table>
         <tr>
@@ -152,5 +135,5 @@
 
       <script src="js/home.js"></script>
 </body>
-
+</html>
 
