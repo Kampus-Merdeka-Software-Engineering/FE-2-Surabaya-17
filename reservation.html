@@ -16,28 +16,27 @@
             <li><a href="reservation.html" class="active">Reservation</a></li>
         </ul>
         </nav>
-    <h1>La Felicita Reservation</h1>
-
     <form action="reservation.php" method="post">
+      <h1>La Felicita Reservation</h1>
       <div class="elem-group">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="visitor_name" placeholder="Falsha" pattern=[A-Z\sa-z]{3,20} required>
       </div>
-          <div class="elem-group">
+     <div class="elem-group">
         <label for="phone">Your Phone</label>
         <input type="number" id="phone" name="visitor_phone" placeholder="628-xxx-xxx" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
       </div>
-            <div class="elem-group inlined">
-        <label for="people">For how many people</label>
-        <input type="number" id="people" name="total_people" placeholder="2" min="1" required>
+      <div class="elem-group inlined">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" placeholder="13.00" pattern=[A-Z\sa-z]{3,20} required>
       </div>
-           <div class="elem-group inlined">
+      <div class="elem-group inlined">
         <label for="date">Date</label>
         <input type="date" id="date" name="date" required>
       </div>
-      <div class="elem-group">
-        <label for="time">Time</label>
-        <input type="time" id="time" name="time" placeholder="13.00" pattern=[A-Z\sa-z]{3,20} min="10.00" max="23.00" >
+       <div class="elem-group">
+        <label for="people">For how many people</label>
+        <input type="number" id="people" name="total_people" placeholder="2" min="1" max="10" required>
       </div>
           <div class="elem-group">
         <label for="branch-selection">Select Branch Preference</label>
@@ -56,7 +55,7 @@
       <hr>
       <div class="elem-group">
         <label for="message">Anything Else?</label>
-        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
       </div>
       <button type="submit">Submit</button>
     </form>
