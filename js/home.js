@@ -49,3 +49,28 @@ function normalImg(x) {
   x.style.height = "150px";
   x.style.width = "200px";
 }
+
+async function renderMenu() {
+  try {
+    const data  = await fetch('http://localhost:3000/menu');
+    const json = await data.json();
+    const menuContainer = document.getElementById('menu-container');
+
+    json.forEach((food) => {
+      const container = `
+      <div>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="${food.img}">
+          <p>${food.name}</p>
+          <p>Price: IDR${food.price}</p>
+        </div>
+      `;
+      menuContainer.innerHTML = container;
+    });
+
+
+  } catch(err) {
+    console.log(err);
+  }
+};
+
+renderMenu();

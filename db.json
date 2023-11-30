@@ -1,0 +1,13 @@
+{
+    "menu": [
+      { "id": 1, "name": "Tagliatelle al ragù alla Bolognese", "price": 50000, "img" : "picture/TagliatellealragùallaBolognese.jpg"},
+      { "id": 2, "name": "Spaghetti alle vongole", "price": 50000, "img" : "picture/Spaghettiallevongole.jpg"},
+      { "id": 3, "name": "Lasagne alla Bolognese", "price": 50000, "img" : "picture/LasagneallaBolognese.jpg"},
+      { "id": 4, "name": "Ravioli", "price": 50000, "img" : "picture/ravioli.jpg"},
+      { "id": 5, "name": "Ossobuco", "price": 50000, "img" : "picture/ossobuco.jpg"},
+      { "id": 6, "name": "Tiramisu", "price": 50000, "img" : "picture/tiramisu.jpg"},
+      { "id": 7, "name": "Panna Cotta", "price": 50000, "img" : "picture/pannacotta.jpg"},
+      { "id": 8, "name": "Tiramisu Affogato", "price": 50000, "img" : "picture/tiramisuaffogato.jpg"},
+      { "id": 9, "name": "Canoli", "price": 50000, "img" : "picture/canoli.jpg"},
+      { "id": 10, "name": "Biscotti", "price": 50000, "img" : "picture/biscotti.jpg"}
+]}
