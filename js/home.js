@@ -56,7 +56,7 @@ async function renderMenu() {
     const json = await data.json();
     const menuContainer = document.getElementById('menu-container');
 
-    json.forEach((food) => {
+    const food = json.map((food) => {
       const container = `
       <div>
           <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="${food.img}">
@@ -64,9 +64,10 @@ async function renderMenu() {
           <p>Price: IDR${food.price}</p>
         </div>
       `;
-      menuContainer.innerHTML = container;
+    return container;
     });
-
+    console.log(food)
+    menuContainer.innerHTML = food;
 
   } catch(err) {
     console.log(err);
