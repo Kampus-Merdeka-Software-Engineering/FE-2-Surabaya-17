@@ -276,3 +276,63 @@ img {vertical-align: middle;}
     padding-right: 50px;
     font-family: Arial;
   }
+
+
+/* Add media query for Table*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait),
+only screen and (min-device-width: 1024px) and (max-device-width: 768px) and (orientation: landscape) {
+/* iPad Mini styles */
+
+body {
+font-size: 14px; /* Adjust font size for better readability on iPad Mini */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides img{
+  width: 100%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 90px;
+  margin: auto;
+  max-width: 1024px;
+  min-width: 768px;
+}
+
+.flex-container img {
+width: 110%; /* Make the image fill the container on iPad Mini */
+height: auto;
+}
+
+.flex-container div img {
+margin-left: 0; /* Center the image in the container */
+margin-top: 15px; /* Adjust top margin for better spacing */
+}
+
+.flex-container > div {
+margin: 10px;
+padding: 10px;
+font-size: 16px; /* Increase font size for better readability on iPad Mini */
+}
+
+.flex-container div button {
+padding: 7px 20px; /* Adjust button padding for better spacing on iPad Mini */
+font-size: 16px; /* Increase font size for better readability on iPad Mini */
+}
+
+.footer table {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.footer {
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
