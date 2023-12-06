@@ -59,7 +59,7 @@ async function renderMenu() {
     const food = json.map((food) => {
       const container = `
       <div>
-          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="${food.img}">
+          <img src="${food.img}">
           <p>${food.name}</p>
           <p>Price: IDR${food.price}</p>
         </div>
@@ -76,3 +76,28 @@ async function renderMenu() {
 
 renderMenu();
 
+async function renderFood() {
+  try {
+    const data  = await fetch('http://localhost:3000/food');
+    const json = await data.json();
+    const menuContainer = document.getElementById('menu-container2');
+
+    const food = json.map((food) => {
+      const container = `
+      <div>
+          <img src="${food.img}">
+          <p>${food.name}</p>
+          <p>Price: IDR${food.price}</p>
+        </div>
+      `;
+    return container;
+    });
+    console.log(food)
+    menuContainer.innerHTML = food;
+
+  } catch(err) {
+    console.log(err);
+  }
+};
+
+renderFood();
