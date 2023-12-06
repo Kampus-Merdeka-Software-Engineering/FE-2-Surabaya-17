@@ -40,25 +40,27 @@ body {margin:0;
 padding:0;}
 
 
+/* search */
 .search-container {
+  background-color: gainsboro;
+  height: 30px;
+  width: auto;
+  padding: 7px 15px;
+  border-radius: 50px;
   float: right;
+  margin-right: 5px;
 }
 
-.search-container button {
-  float: right;
-  padding: 8px 20px;
-  margin-top: 8px;
-  margin-left: 4px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
+.search-container input{
   border: none;
-  cursor: pointer;
+  outline: none;
+  background: none;
 }
 
-.search-container button:hover {
-  background: #ccc;
+.search-container a{
+  color: #333
 }
+
 
 @media screen and (max-width: 600px) {
  .search-container {

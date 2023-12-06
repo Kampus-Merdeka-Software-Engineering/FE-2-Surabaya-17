@@ -337,3 +337,28 @@ padding-right: 20px;
   color: white;
 }
 
+/* Add media query for phones*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait),
+only screen and (min-device-width: 667px) and (max-device-width: 375px) and (orientation: landscape) {
+/* Iphone SE styles */
+
+body {
+font-size: 12px; 
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides img{
+  width: 60px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 90px;
+  margin: auto;
+  max-width: 375px;
+  min-width: 667px;
+}
