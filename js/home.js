@@ -65,7 +65,7 @@ async function renderMenu() {
         </div>
       `;
     return container;
-    });
+    }).join("");
     console.log(food)
     menuContainer.innerHTML = food;
 
@@ -91,7 +91,7 @@ async function renderFood() {
         </div>
       `;
     return container;
-    });
+    }).join("");
     console.log(food)
     menuContainer.innerHTML = food;
 
