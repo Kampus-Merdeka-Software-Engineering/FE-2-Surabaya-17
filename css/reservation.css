@@ -86,10 +86,10 @@ padding:0;}
   }
   
   div.elem-group.inlined {
-    width: 49%;
+    width: 33%;
     display: inline-block;
-    float: right;
-    margin-left: 1%;
+    margin-left: 0px;
+    padding-right: 1px;
   }
   form {
   padding: 100px;
