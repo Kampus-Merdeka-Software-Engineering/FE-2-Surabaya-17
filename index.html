@@ -20,6 +20,7 @@
   </header>
     
 <!-- slideshow -->
+<div class="slideshow-container">
   <div class="mySlides fade">
     <img src="picture/mc2.png">
   </div>
@@ -31,17 +32,17 @@
   <div class="mySlides fade">
     <img src="picture/mc4.jpg">
   </div>
-
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
   </div>
-  <br>
+<br>
 
-  <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
       <script src="js/home.js"></script>
     
 
@@ -50,25 +51,23 @@
         <div>
           <img src="picture/felicitagate.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting">
         </div>
-        
+
         <div>
-          <p>About Felicita</p>
-            <p>since 2023</p>
-            <p>La Felicita, nestled in a peaceful town, is an enchanting Italian cafe offering a unique experience with its warm, culturally rich interior adorned with paintings of Italian landscapes. The cafe provides a comfortable space to enjoy high-quality coffees and authentic dishes, inviting patrons to savor moments of happiness.</p>
+          <h1>About Felicita</h1>
+            <p>Since 2023</p>
+            <p>La Felicita, nestled in a peacef ul town, is an enchanting Italian cafe offering a unique experience with its warm, culturally rich interior adorned with paintings of Italian landscapes. The cafe provides a comfortable space to enjoy high-quality coffees and authentic dishes, inviting patrons to savor moments of happiness.</p>
             <p>With friendly service and a welcoming atmosphere, La Felicita becomes a haven in the heart of town. Whether you seek a peaceful escape or vibrant social setting, the cafe promises a delightful taste of Italy, creating an unparalleled experience where each visit is a memorable journey into the richness of Italian flavors and hospitality.</p>
             <button onclick="document.location='reservation.html'">Reserve Now</button>
         </div>
-      </div>
-      
+        </div>
+
       <!-- Menu Box -->
-      <div>
-      <h1 style="text-align: center">Our Specialties</h1>
+      <div class="menu">
+      <h1>Our Specialties</h1>
       <div class="flex-container1" id="menu-container"></div>
       <div class="flex-container2" id="menu-container2"></div>
-    </div>
+      </div>
     
-
-      
       <!-- Footer -->
       <div class="footer">
         <table>
@@ -83,6 +82,7 @@
         </tr>
         </table> 
       </div>
+    
       
 
       <script src="js/home.js"></script>

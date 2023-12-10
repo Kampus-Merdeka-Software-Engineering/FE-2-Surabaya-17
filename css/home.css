@@ -50,7 +50,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 1600px;
     position: relative;
     margin: auto;
   }
@@ -101,7 +101,6 @@ img {vertical-align: middle;}
     top: 0;
   }
   
-  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -127,137 +126,48 @@ img {vertical-align: middle;}
     from {opacity: .4} 
     to {opacity: 1}
   }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (min-width: 450px) {
-    .prev, .next,.text {font-size: 11px} 
-  }
-
-  body {font-family: "Times New Roman", Georgia, Serif;}
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display";
-    letter-spacing: 5px;
-  }
-
-  .button {
-    position: relative;
-    background-color: #181a19;
-    border: none;
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 5px;
-    width: 150px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .button:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  .button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
 
   .flex-container {
-  display: flex;
-  align-items: center;
-  }
-  
-  .flex-container img{
-    width: 600px;
-    height: 400px;
-  }
-  
-  .flex-container div img{
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  .flex-container > div {
-  margin: 20px;
-  margin-top: 20px;
-  padding: 40px;
-  font-size: 20px;
-  text-align: justify;
-  }
-  .flex-container div button{
-  background-color: #333;
-  color: white;
-  padding: 7px 30px;
-  }
-  .flex-container div button:hover{
-  background-color: #555555;
-  color: white;
-  cursor: pointer;
-  }
-  .flex-container1 {
     display: flex;
-    justify-content: space-around;
-    background-color: white;
+    align-items: center;
+    padding-left: 50px;
+    width: 1300px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    }
+    
+    .flex-container img{
+      width: 600px;
+      height: 400px;
+      align-content: center;
+    }
+    
+    .flex-container div img{
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .flex-container > div {
+    margin: 10px;
+    margin-top: 1px;
     padding: 10px;
-    margin: 10px;
-    text-align: center;
-  }
+    font-size: 16px;
+    text-align: justify;
+    margin-right: 60px;
+    }
+    .flex-container div button{
+    background-color: #333;
+    color: white;
+    padding: 4px 10px;
+    }
+    .flex-container div button:hover{
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+    }
   
-  .flex-container1 > div {
-    background-color: gainsboro;
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    text-align: center;
-    line-height: 15px;
-    font-size: 12px;
-    max-width: 100%;
-    height: auto;
-    font-family: Helvetica;
-  }
-
-  .flex-container1 div img{
-    width: 200px;
-    height: 150px;
-  }
-
-  .flex-container2 {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .flex-container2 > div {
-    background-color: gainsboro;
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    text-align: center;
-    line-height: 15px;
-    font-size: 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 100%;
-    height: auto;
-    font-family: Helvetica;
-  }
-
-  .flex-container2 div img {
-    width: 200px;
-    height: 150px;
-  }
+    .menu h1 {
+      text-align: center;
+    }
 
   .footer {
     background-color: #333;
@@ -277,234 +187,316 @@ img {vertical-align: middle;}
     font-family: Arial;
   }
 
-/* Phone*/
-@media only screen and (min-width: 375px) and (max-width: 667) {
-  .prev, .next,.text {font-size: 5px} 
-}
-
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-  font-size: 22px;
-}
-/* navbar */
-nav {
-  z-index: 2;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#333;
-  width: 375px;
-  height: 55px;
-  position: fixed;
-  top: 0;
-  border-bottom: 1px rgb(19, 2, 2);
-}
-
-header img{
-  width: 55px;
-  margin-left: 10px;
-}
-
-/* featurebar */
-nav ul{
-    float: right;
-    display: flex;
-    list-style: none;
-}
-
-/* cssfeaturebar */
-nav ul li a{
-    color: rgb(250, 248, 248);
-    line-height: 50px;
-    padding: 12px 30px;
-    font-size: 15px;
-    font-family: "Helvetica";
-    text-decoration: none;
-    border-radius: 6px;
-    margin-right: 30px;
-}
-
-nav ul li a:hover{
-    background-color: black;
-}
-body {margin:0;
-padding:0;}
-
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none; overflow: visible;}
-img {vertical-align: middle;
-.button {
-  position: relative;
-  background-color: #181a19;
-  border: none;
-  font-size: 20px;
-  color: #FFFFFF;
-  padding: 5px;
-  width: 5px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-.button:after {
-  content: "";
-  background: #f1f1f1;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 10px;
-  position: relative;
-  margin: auto;
-}
-.mySlides img{
-  width: 375px;  
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-  margin-top: 90px;
-  margin: auto;
-  max-width: 375px;
-  min-width: 375px;
-}
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 7px;
-    width: 7px;
-    margin: 0px;
-    margin-top: 0px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  @media screen and (max-width: 480px) {
+    nav {
+      z-index: 2;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#333;
+      width: 100%;
+      height: 120px;
+      position: fixed;
+      top: 0;
+      border-bottom: 1px rgb(19, 2, 2);
+    }
+    
+    header img{
+      width: 100px;
+      margin-left: 40px;
+      margin-top: 12px;
+    }
+    
+    /* featurebar */
+    nav ul{
+        float: right;
+        display: flex;
+        list-style: none;
+        margin-top: 37px;
+    }
+    
+    /* cssfeaturebar */
+    nav ul li a{
+        color: rgb(250, 248, 248);
+        line-height: 50px;
+        padding: 12px 30px;
+        font-size: 24px;
+        font-family: "Helvetica";
+        text-decoration: none;
+        border-radius: 6px;
+        margin-right: 30px;
+    }
+    
+    nav ul li a:hover{
+        background-color: black;
+    }
+  /* Slideshow container */
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none; overflow: visible;}
+  img {vertical-align: middle;}
+  
+  .slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides img{
+    width: 1500px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 90px;
+    margin: auto;
+  }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      border-radius: 3px 0 0 3px;
+      float: right;
+      position: absolute;
+      left: 350%;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  
+    .dot {
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      position: relative;
+      left: 130%;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+  
+    .flex-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 50px;
+      width: 1410px;
+      margin-top: 40px;
+      }
+      .flex-container h1 {
+        text-align: center;
+      }
+      
+      .flex-container img{
+        width: 1050px;
+        height: auto;
+        align-content: center;
+      }
+      
+      .flex-container div img{
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      .flex-container > div {
+      margin: 10px;
+      margin-top: 1px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: justify;
+      margin-right: 120px;
+      margin-left: 120px;
+      }
+      .flex-container div button{
+      background-color: #333;
+      color: white;
+      padding: 4px 10px;
+      }
+      .flex-container div button:hover{
+      background-color: #555555;
+      color: white;
+      cursor: pointer;
+      }
+      
+      .menu h1 {
+        text-align: center;
+        position: relative;
+        left: 125%;
+        font-size: 36px;
+      }
+      .footer {
+        background-color: #333;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        width: 1500px;
+      }
+      
+      .footer table {
+        width:100%;
+        color: white;
+        margin-top: 33px;
+        margin-bottom: 20px;
+        font-size: 21px;
+        padding-left: 80px;
+        padding-right: 80px;
+        font-family: Arial;
+        position: relative;
+      }
+  }
+  @media only screen and (max-width: 375px) {
+    .next {
+      border-radius: 3px 0 0 3px;
+      float: right;
+      position: absolute;
+      left: 381%;
+    }
+    .prev {
+      position: absolute;
+      left: 8%
+    }
+    .dot{
+      position: relative;
+      left: 165%;
+      top: 30px;
+      width: 26px;
+      height: 26px;
+    }
+    .menu h1{
+      left: 570px;
+      font-size: 36px;
+    }
+    .footer{
+      width: 1560px;
+    }
   }
   
-  .active, .dot:hover {
-    background-color: #717171;
+  @media only screen and (max-width: 414px) {
+    .dot {
+      position: relative;
+      left: 550px;
+      top: 30px;
+      width: 26px;
+      height: 26px;
+    }
+    .flex-container{
+      margin-left: 25px;
+      margin-top: 70px;
+    }
+    .flex-container img {
+      width: 1080px;
+    }
+    .menu h1 {
+      left: 550px;
+      font-size: 36px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0%;
+      left: 4px;
+      width: 1550px;
+    }
   }
-  
-.flex-container {
-display: flex;
-align-items: center;
-flex-direction: column;
-}
 
-.flex-container img{
-  width: 300px;
-  height: 200px;
-}
+  @media only screen and (max-width: 430px) {
+    .slideshow-container {
+      max-width: 980px;
+      position: relative;
+      margin: auto;
+    }
+    .mySlides img{
+      width: 1535px;  
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: 90px;
+      margin: auto;
+    }
+    .prev {
+      position: absolute;
+      left: 50px;
+    }
+    .next{
+      position: absolute;
+      left: 335%;
+    }
+    .dot {
+      position: relative;
+      top: 20px;
+      width: 26px;
+      height: 26px;
+    }
+    .flex-container {
+      margin-left: 40px;
+      margin-top: 40px;
+      width: 1450px;
+    }
+    .flex-container img {
+      width: 1115px;
+    }
+    .menu h1 {
+      left: 560px;
+      font-size: 36px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0%;
+      width: 1550px;
+    }
+  }
 
-.flex-container div img{
-  margin-left: 0px;
-  margin-top: 0px;
-}
-.flex-container > div {
-margin: 10px;
-margin-top: 1px;
-padding: 10px;
-font-size: 12px;
-text-align: justify;
-}
-.flex-container div button{
-background-color: #333;
-color: white;
-padding: 4px 10px;
-}
-.flex-container div button:hover{
-background-color: #555555;
-color: white;
-cursor: pointer;
-}
-.flex-container1 {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-}
-
-.flex-container1 > div {
-  background-color: gainsboro;
-  width: 200px;
-  height: 150px;
-  margin: 10px;
-  text-align: center;
-  line-height: 15px;
-  font-size: 12px;
-  max-width: 100%;
-  height: auto;
-  font-family: Helvetica;
-}
-
-.flex-container1 div img{
-  width: 200px;
-  height: 150px;
-}
-
-.flex-container2 {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-}
-
-.flex-container2 > div {
-  background-color: gainsboro;
-  width: 200px;
-  height: 150px;
-  margin: 10px;
-  text-align: center;
-  line-height: 15px;
-  font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  max-width: 100%;
-  height: auto;
-  font-family: Helvetica;
-}
-
-.flex-container2 div img {
-  width: 200px;
-  height: 150px;
-}
-
-.footer {
-  background-color: #333;
-  padding: 5px;
-  text-align: center;
-  color: white;
-}
-
-.footer table {
-  width:100%;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 9px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-family: Arial;
-}
+  @media only screen and (max-width: 412px) {
+    .next{
+      position: absolute;
+      left: 1450px;
+    }
+    .dot {
+      position: relative;
+      left: 600px;
+    }
+    .flex-container {
+      width: 1400px;
+    }
+    .flex-container img {
+      width: 1070px;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .dot {
+      position: relative;
+      left: 650px;
+    }
+    .flex-container {
+      margin-left: 10px; 
+    }
+    .flex-container img {
+      width: 1090px;
+    }
+    .menu h1 {
+      left: 550px;
+      font-size: 36px;
+    }
+    .footer {
+      position: fixed;
+      margin-left: 5px;
+      width: 1450px;
+    }
+  }
