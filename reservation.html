@@ -84,7 +84,7 @@
                 formObject[key] = value;
             });
 
-            fetch('https://be-2-surabaya-17-production.up.railway.app/api/reservations', {
+            fetch('api/reservations', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -95,7 +95,6 @@
             .then(data => {
                 console.log('Success:', data);
                 alert('Reservation created successfully!');
-                // Do anything else you want after successful reservation creation
             })
             .catch((error) => {
                 console.error('Error:', error);
