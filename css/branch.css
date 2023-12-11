@@ -41,7 +41,7 @@ padding:0;}
 
 
 /* search */
-.search-container {
+.searchcontainer {
 background-color: gainsboro;
 height: 30px;
 width: auto;
@@ -51,14 +51,14 @@ float: right;
 margin-right: 5px;
 }
 
-.search-container input{
+.searchcontainer input{
 border: none;
 outline: none;
 background: none;
 }
 
-.search-container a{
-color: #333
+.searchcontainer a{
+color: #333;
 }
 
 h1{
@@ -175,7 +175,7 @@ div.desc {
   nav ul li a:hover{
       background-color: black;
   }
-  .search-container a {
+  .searchcontainer a {
     position: relative;
     left: 170px;
     top: -18px;
@@ -207,11 +207,11 @@ div.desc {
   .content h1 {
     margin-left: 10px;
     }
-    .search-container {
+    .searchcontainer {
       position: relative;
       left: 10px;
     }
-    .search-container a {
+    .searchcontainer a {
       position: relative;
       left: 165px;
       top: -18px;
@@ -231,11 +231,11 @@ div.desc {
       font-size: 25px;
       margin-left: 25px;
     }
-    .search-container {
+    .searchcontainer {
       position: relative;
       left: -1px;
     }
-    .search-container a {
+    .searchcontainer a {
       position: relative;
       left: 3px;
       top: 0px;
@@ -249,11 +249,11 @@ div.desc {
   .content h1 {
     margin-left: 20px;
   }
-  .search-container {
+  .searchcontainer {
     position: relative;
     left: -10px;
   }
-  .search-container a {
+  .searchcontainer a {
     position: relative;
     left: 0px;
     top: 0px;
@@ -263,7 +263,7 @@ div.desc {
   }
 }
 @media only screen and (max-width: 375px) {
-  .search-container a {
+  .searchcontainer a {
     position: relative;
     left: 170px;
     top: -20px;

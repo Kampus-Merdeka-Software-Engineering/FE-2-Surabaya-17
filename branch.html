@@ -6,8 +6,7 @@
     <title>Our Branches</title>
     <link rel="stylesheet" href="css/branch.css">
         <!-- icon search bar -->
-        <script src="https://kit.fontawesome.com/6d8e3cbb94.js" crossorigin="anonymous"></script>
-
+<script src="js/branch.js"></script>
 </head>
 <body>
   <div>
@@ -25,11 +24,11 @@
   <div class="content">
     <h1 style="text-align: center;">Our Branches</h1>
 
-    <div class="search-container">
-      <input type="text" placeholder="Search..." name="search">
-      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <div class="searchcontainer">
+      <input type="text" placeholder="search our branches" name="search" id="city">
+      <a href="#"><i class="Search"></i></a>
+      <button onclick="fetchBookById()">Search</button>
   </div>
-
   </div>
   </div>
     
@@ -37,8 +36,8 @@
     <div class="responsive">
       <div class="gallery">
           <img src="picture/jkt1.jpg" alt="Cinque Terre"> 
-        </a>
-        <div class="desc">Jakarta</div>
+        <div class="desc" id="city">Jakarta</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     
@@ -46,31 +45,31 @@
     <div class="responsive">
       <div class="gallery">
           <img src="picture/bgr.jpg" alt="Forest">
-        </a>
-        <div class="desc">Bogor</div>
+        <div class="desc" id="city">Bogor</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     
     <div class="responsive">
       <div class="gallery">
           <img src="picture/dpk.jpg" alt="Northern Lights">
-        </a>
-        <div class="desc">Depok</div>
+        <div class="desc" id="city">Depok</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     <div class="responsive">
       <div class="gallery">
           <img src="picture/tangerang.jpg" alt="Northern Lights">
-        </a>
-        <div class="desc">Tangerang</div>
+        <div class="desc" id="city">Tangerang</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     <br>
     <div class="responsive">
       <div class="gallery">
           <img src="picture/bks.jpg" alt="Cinque Terre">
-        </a>
-        <div class="desc">Bekasi</div>
+        <div class="desc" id="city">Bekasi</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     
@@ -78,23 +77,24 @@
     <div class="responsive">
       <div class="gallery">
           <img src="picture/bdg.jpg" alt="Forest" >
-        </a>
-        <div class="desc">Bandung</div>
+        <div class="desc" id="city">Bandung</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     
     <div class="responsive">
       <div class="gallery">
           <img src="picture/subay.jpg" alt="Northern Lights" >
-        </a>
-        <div class="desc">Surabaya</div>
+        <div class="desc" id="city">Surabaya</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     <div class="responsive">
       <div class="gallery">
           <img src="picture/smg.jpg" alt="Northern Lights" >
         </a>
-        <div class="desc">Semarang</div>
+        <div class="desc" id="city">Semarang</div>
+        <div id="address">Jl. KM 0 No. 17</div>
       </div>
     </div>
     </div>
