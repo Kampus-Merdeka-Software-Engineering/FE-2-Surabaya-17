@@ -215,20 +215,20 @@ padding:0;}
     font-size: 25px;
     text-align: center;
     position: relative;
-    left: 150px;
+    left: 270px;
   }
   
    div.elem-group {
-    width: 550px;
+    width: 650px;
     height: 70px;
-    margin-left: -50px;
+    margin-left: 30px;
     font-size: 10px;
     top: 50px;
    }
    div.elem-group.inlined {
     position: relative;
-    left: -50px;
-    width: 330%;
+    left: 30px;
+    width: 390%;
     right: 1000px;
     top: -5px;
     margin-right: 100px;
@@ -236,23 +236,83 @@ padding:0;}
    div.elem-group{
     margin-top: -10px;
    }
-   .button {
+   button {
     position: relative;
-    top: 50px;
-    font-size: 100px;
+    top: 230px;
+    left: 50px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 5px;
    }
    .footer {
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+    color: white;
     width: 100%;
-    height: 60px;
     position: fixed;
-    bottom: 0%;
+    bottom: 0px;
   }
-  .footer table{
-    margin-top: -5px;
-    font-size: 8px;
-    margin-left: -20px;
-    width: 420px;
-    height: 55px;
-  }
-   }
   
+  .footer table {
+    width:100%;
+    color: white;
+    margin-top: 33px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: Arial;
+    position: relative;
+   }
+  }
+
+  @media only screen and (max-width: 414px) {
+    div.elem-group {
+      width: 790px;
+      height: 70px;
+      margin-left: 30px;
+      font-size: 10px;
+      top: 50px;
+     }
+  }
+
+  @media only screen and (max-width: 390px) {
+    div.elem-group {
+      width: 700px;
+      height: 70px;
+      margin-left: 30px;
+      font-size: 10px;
+      top: 50px;
+     }
+  }
+
+  @media only screen and (max-width: 430px) {
+    div.elem-group {
+      width: 700px;
+      height: 70px;
+      margin-left: 30px;
+      font-size: 10px;
+      top: 50px;
+     }
+     div.elem-group.inlined {
+      position: relative;
+      left: 30px;
+      width: 320%;
+      right: 1000px;
+      top: -5px;
+      margin-right: 100px;
+     }
+  }
+
+  @media only screen and (max-width: 412px){
+    div.elem-group {
+      width: 640px;}
+
+  }
+
+  @media only screen and (max-width: 360px){
+    div.elem-group {
+      width: 485px;}
+
+  }

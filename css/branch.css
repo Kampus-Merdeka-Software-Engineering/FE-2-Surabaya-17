@@ -187,16 +187,15 @@ div.desc {
     height: 55px;
   }
 }
-
-@media only screen and (max-width: 360px) {
-  .content h1 {
-    margin-left: 10px;
-    }
-  }
   
   @media only screen and (max-width: 412px) {
     .footer table {
-      margin-left: -10px;
+      position: relative;
+      right: 15px;
+
+    }
+    #address{
+      font-size: 12px;
     }
   }
   @media only screen and (max-width: 414px) {
@@ -208,6 +207,9 @@ div.desc {
     .footer table {
       margin-left: -10px;
     }
+    #address{
+      font-size: 12px;
+    }
   }
 
 @media only screen and (max-width: 430px) {
@@ -217,12 +219,33 @@ div.desc {
   .footer table{
     margin-left: 0px;
   }
+  #address{
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 375px) {
   .footer table { 
     margin-left: -25px;
   }
+  #address{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .footer table { 
+    margin-left: -20px;
+  }
+  #address{
+    font-size: 12px;
+  }
 }
 
-
+@media only screen and (max-width: 360px) {
+  .content h1 {
+    margin-left: 10px;
+    }
+    #address{
+      font-size: 10px;
+    }
+  }
   
