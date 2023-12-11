@@ -51,15 +51,15 @@ function normalImg(x) {
 }
 
 async function renderMenu() {
-  const menuContainer = document.getElementById('menu-container');
+  const menuContainer = document.getElementById("menu-container1");
   try {
     const response = await fetch('https://be-2-surabaya-17-production.up.railway.app/api/specialties');
-    const json = await data.json();
+    const json = await response.json();
     
     const specialties = json.data.map((specialties) => {
       const container = `
       <div>
-          <imageURL src="${specialties.imageURL}">
+          <img src="${specialties.imageURL}">
           <p>${specialties.name}</p>
           <p>Price: IDR${specialties.price}</p>
         </div>
@@ -77,23 +77,23 @@ async function renderMenu() {
 renderMenu();
 
  async function renderFood() {
- try {
-    const response  = await fetch('https://be-2-surabaya-17-production.up.railway.app/api/specialties');
-    const json = await data.json();
-    const menuContainer = document.getElementById('menu-container2');
+  const menuContainer = document.getElementById("menu-container2");
+  try {
+    const response  = await fetch('https://be-2-surabaya-17-production.up.railway.app/api/menu');
+    const json = await response.json();
 
-    const specialties = json.map((specialties) => {
+    const menu = json.data.map((menu) => {
       const container = `
       <div>
-          <imageURL src="${specialties.imageURL}">
-          <p>${specialties.name}</p>
-          <p>Price: IDR${specialties.price}</p>
+          <img src="${menu.imageURL}">
+          <p>${menu.name}</p>
+          <p>Price: IDR${menu.price}</p>
         </div>
       `;
     return container;
     }).join("");
-    console.log(specialties)
-    menuContainer.innerHTML = specialties;
+    console.log(menu)
+    menuContainer.innerHTML = menu;
 
   } catch(err) {
     console.log(err);
@@ -101,3 +101,25 @@ renderMenu();
 };
 
 renderFood();
+
+async function createReservation() {
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const time = document.getElementById('time').value;
+  const date = document.getElementById('date').value;
+  const people = document.getElementById('people').value;
+  const branch = document.getElementById('branch-selection').value;
+  const subject = document.getElementById('message').value;
+
+  try {
+    const response = await fetch(`https://be-2-surabaya-17-production.up.railway.app/api/reservation`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, phone, time, date, people, branch, subject })
+    })
+  } catch(err) {
+    console.error(err);
+  }
+}
