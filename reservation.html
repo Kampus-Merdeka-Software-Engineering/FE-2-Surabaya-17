@@ -57,7 +57,7 @@
     <label for="message">Anything Else?</label>
     <textarea id="message" name="subject" placeholder="Tell us anything else that might be important."></textarea>
   </div>
-        <button type="button" onclick="handleFormSubmission()">Submit</button>
+        <button type="button" onclick="createReservation()">Submit</button>
     </form>
 
     <div class="footer">
@@ -74,34 +74,8 @@
       </table> 
     </div>
 
-    <script>
-        function handleFormSubmission() {
-            const form = document.getElementById('reservationForm');
-            const formData = new FormData(form);
-
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-
-            fetch('api/reservations', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formObject),
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                alert('Reservation created successfully!');
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert('There was an error creating the reservation.');
-                // Handle errors or display messages to the user
-            });
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/reservation.js"></script>
 </body>
 </html>
+
