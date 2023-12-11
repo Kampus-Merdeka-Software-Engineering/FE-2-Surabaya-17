@@ -170,6 +170,7 @@ img {vertical-align: middle;}
       text-align: center;
     }
 
+  /*Our Specialties*/
     .flex-container1 {
       display: flex;
       justify-content: space-around;
@@ -372,6 +373,38 @@ img {vertical-align: middle;}
         left: 125%;
         font-size: 36px;
       }
+      .flex-container1 {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+        left: 200px;
+        width: 1150px;
+      }
+      
+      .flex-container1 > div {
+        background-color: gainsboro;
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        line-height: 15px;
+        font-size: 12px;
+        max-width: 100%;
+        height: auto;
+        font-family: Helvetica;
+      }
+      .flex-container1 div img{
+        margin-bottom: 10px;
+        max-width: 100%;
+        height: 135px;
+        width: 100%;
+        font-family: Helvetica;
+      }
+  
       .footer {
         background-color: #333;
         padding: 5px;
@@ -523,6 +556,17 @@ img {vertical-align: middle;}
     .menu h1 {
       left: 550px;
       font-size: 36px;
+    }
+    .flex-container1 {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      position: relative;
+      left: 150px;
+      width: 1150px;
     }
     .footer {
       position: fixed;
