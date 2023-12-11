@@ -16,47 +16,49 @@
             <li><a href="reservation.html" class="active">Reservation</a></li>
         </ul>
         </nav>
-   <form action="https://be-2-surabaya-17-production.up.railway.app/api/reservations" method="post">
-  <!-- ... other form elements ... -->
-  <div class="elem-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" placeholder="Falsha" pattern="[A-Za-z\s]{3,20}" required>
-    <!-- Updated name attribute to match backend: name="name" -->
-  </div>
-  <div class="elem-group">
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="phone" placeholder="628-xxx-xxx" pattern="\d{3}-?\s?\d{3}-?\s?\d{4}" required>
-    <!-- Updated name attribute to match backend: name="phone" -->
-  </div>
-  <div class="elem-group inlined">
-    <label for="time">Time</label>
-    <input type="time" id="time" name="time" placeholder="13:00" pattern="[0-9]{2}:[0-9]{2}" required>
-    <!-- Updated name attribute to match backend: name="time" -->
-  </div>
-  <div class="elem-group inlined">
-    <label for="date">Date</label>
-    <input type="date" id="date" name="date" required>
-    <!-- Updated name attribute to match backend: name="date" -->
-  </div>
-  <div class="elem-group inlined">
-    <label for="people">For how many people</label>
-    <input type="number" id="people" name="people" placeholder="2" min="1" max="10" required>
-    <!-- Updated name attribute to match backend: name="people" -->
-  </div>
-  <div class="elem-group">
-    <label for="branch-selection">Select Branch Preference</label>
-    <select id="branch-selection" name="branch" required>
-      <!-- Updated name attribute to match backend: name="branch" -->
-      <!-- ... options ... -->
-    </select>
-  </div>
-  <div class="elem-group">
-    <label for="message">Anything Else?</label>
-    <textarea id="message" name="subject" placeholder="Tell us anything else that might be important."></textarea>
-    <!-- Updated name attribute to match backend: name="subject" -->
-  </div>
-  <button type="submit">Submit</button>
-</form>
+    <form action="https://be-2-surabaya-17-production.up.railway.app/api/reservations" method="post">
+      <h1>La Felicita Reservation</h1>
+      <div class="elem-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="visitor_name" placeholder="Falsha" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+     <div class="elem-group">
+        <label for="phone">Your Phone</label>
+        <input type="number" id="phone" name="visitor_phone" placeholder="628-xxx-xxx" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" placeholder="13.00" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+       <div class="elem-group inlined">
+        <label for="people">For how many people</label>
+        <input type="number" id="people" name="total_people" placeholder="2" min="1" max="10" required>
+      </div>
+          <div class="elem-group">
+        <label for="branch-selection">Select Branch Preference</label>
+        <select id="branch-selection" name="branch_preference" required>
+            <option value="">Choose a Branch from the List</option>
+            <option value="connecting">Jakarta</option>
+            <option value="adjoining">Bogor</option>
+            <option value="adjacent">Depok</option>
+            <option value="adjacent">Tangerang</option>
+            <option value="adjacent">Bekasi</option>
+            <option value="adjacent">Bandung</option>
+            <option value="adjacent">Surabaya</option>
+            <option value="adjacent">Semarang</option>
+        </select>
+      </div>
+      <hr>
+      <div class="elem-group">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
     
     <div class="footer">
       <table>
