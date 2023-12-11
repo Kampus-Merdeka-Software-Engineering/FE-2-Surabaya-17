@@ -15,64 +15,47 @@
             <li><a href="branch.html">Branch</a></li>
             <li><a href="reservation.html" class="active">Reservation</a></li>
         </ul>
-        </nav>
-  <form action="https://be-2-surabaya-17-production.up.railway.app/api/reservations" method="post">
-  <h1>La Felicita Reservation</h1>
-  <div class="elem-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" placeholder="Your Name" pattern="[A-Za-z\s]{3,20}" required>
-  </div>
-  <div class="elem-group">
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="phone" placeholder="628-xxx-xxx" pattern="\d{3}-\d{3}-\d{3}" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="time">Time</label>
-    <input type="time" id="time" name="time" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="date">Date</label>
-    <input type="date" id="date" name="date" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="people">For how many people</label>
-    <input type="number" id="people" name="people" placeholder="2" min="1" max="10" required>
-  </div>
-  <div class="elem-group">
-    <label for="branch-selection">Select Branch Preference</label>
-    <select id="branch-selection" name="branch" required>
-        <option value="">Choose a Branch from the List</option>
-            <option value="connecting">Jakarta</option>
-            <option value="adjoining">Bogor</option>
-            <option value="adjacent">Depok</option>
-            <option value="adjacent">Tangerang</option>
-            <option value="adjacent">Bekasi</option>
-            <option value="adjacent">Bandung</option>
-            <option value="adjacent">Surabaya</option>
-            <option value="adjacent">Semarang</option>
-    </select>
-  </div>
-  <hr>
-  <div class="elem-group">
-    <label for="message">Anything Else?</label>
-    <textarea id="message" name="subject" placeholder="Tell us anything else that might be important."></textarea>
-  </div>
-  <button type="button" onclick="handleFormSubmission()">Submit</button>
+    </nav>
+    <form id="reservationForm">
+        <!-- Your form elements as you previously had -->
+
+        <!-- Button to trigger form submission -->
+        <button type="button" onclick="handleFormSubmission()">Submit</button>
     </form>
-    
+
     <div class="footer">
-      <table>
-      <tr>
-          <td style="text-align: left;">Revolusioner Street No. 17, 
-            <br>Kebayoran Baru, South Jakarta.</td>
-          <td>Open Everyday, 
-            <br>Monday To Sunday 10AM Onwards.</td>
-          <td style="text-align: right;">© 2023 La Felicita Ristorante.
-            <br>All Rights Reserved.
-          </td>
-      </tr>
-      </table> 
+        <!-- Your footer content -->
     </div>
 
+    <script>
+        function handleFormSubmission() {
+            const form = document.getElementById('reservationForm');
+            const formData = new FormData(form);
+
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+
+            fetch('https://be-2-surabaya-17-production.up.railway.app/api/reservations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formObject),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Reservation created successfully!');
+                // Do anything else you want after successful reservation creation
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error creating the reservation.');
+                // Handle errors or display messages to the user
+            });
+        }
+    </script>
 </body>
 </html>
