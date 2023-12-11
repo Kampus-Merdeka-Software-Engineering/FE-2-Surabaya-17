@@ -51,23 +51,23 @@ function normalImg(x) {
 }
 
 async function renderMenu() {
+  const menuContainer = document.getElementById('menu-container');
   try {
-    const data  = await fetch('http://localhost:3000/menu');
+    const response = await fetch('https://be-2-surabaya-17-production.up.railway.app/api/specialties');
     const json = await data.json();
-    const menuContainer = document.getElementById('menu-container');
-
-    const food = json.map((food) => {
+    
+    const specialties = json.data.map((specialties) => {
       const container = `
       <div>
-          <img src="${food.img}">
-          <p>${food.name}</p>
-          <p>Price: IDR${food.price}</p>
+          <imageURL src="${specialties.imageURL}">
+          <p>${specialties.name}</p>
+          <p>Price: IDR${specialties.price}</p>
         </div>
       `;
     return container;
     }).join("");
-    console.log(food)
-    menuContainer.innerHTML = food;
+    console.log(specialties)
+    menuContainer.innerHTML = specialties;
 
   } catch(err) {
     console.log(err);
@@ -76,24 +76,24 @@ async function renderMenu() {
 
 renderMenu();
 
-async function renderFood() {
-  try {
-    const data  = await fetch('http://localhost:3000/food');
+ async function renderFood() {
+ try {
+    const response  = await fetch('https://be-2-surabaya-17-production.up.railway.app/api/specialties');
     const json = await data.json();
     const menuContainer = document.getElementById('menu-container2');
 
-    const food = json.map((food) => {
+    const specialties = json.map((specialties) => {
       const container = `
       <div>
-          <img src="${food.img}">
-          <p>${food.name}</p>
-          <p>Price: IDR${food.price}</p>
+          <imageURL src="${specialties.imageURL}">
+          <p>${specialties.name}</p>
+          <p>Price: IDR${specialties.price}</p>
         </div>
       `;
     return container;
     }).join("");
-    console.log(food)
-    menuContainer.innerHTML = food;
+    console.log(specialties)
+    menuContainer.innerHTML = specialties;
 
   } catch(err) {
     console.log(err);
